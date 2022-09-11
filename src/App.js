@@ -3,10 +3,11 @@ import { useState, useEffect} from 'react'
 import Gallery  from './Gallery';
 import ButtonBar from './buttonBar';
 
-function App() {
+const App =() => {
 
-  let [artId, setArtId] = useState(12720)
-  let [data, setData] = useState( {} )
+  const [artId, setArtId] = useState(12720)
+  const [data, setData] = useState( {} )
+
   useEffect(() =>{
   document.title = 'Welcome to ArtWorld'
   fetch(`https://collectionapi.metmuseum.org/public/collection/v1/objects/${artId}`)
