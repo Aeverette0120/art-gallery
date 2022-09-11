@@ -22,7 +22,7 @@ const handleIterate = (e) => {
     <div className="App">
       <header className="App-header">
         <Gallery objectImg={data.primaryImage} artist={data.artistDisplayName} title={data.title} />
-        <ButtonBar />
+        <ButtonBar clickHandler={ handleIterate}/>
       </header>
     </div>
   );
